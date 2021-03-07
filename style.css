@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Shippori Mincho', serif;
+  box-sizing: border-box;
+}
+
+
+.menubar{
+   /* width: 100%;
+  height: 100vh; */
+  position: absolute;
+  z-index: 0;
+}
+
+.z-index-vary {
+  z-index: 2!important;
+}
+
+.show-hide {
+  display: block!important
+}
+
+.navbar{
+  width: 0;
+  height: 100%;
+  background-color: #383737;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  transform: translateX(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60% 0 0 60%;
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change{
+  width: 250px;
+  transform: translateX(0%);
+}
+
+.hamMenu{
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line1{
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.8s;
+}
+
+.line2{
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+   transition: all 0.8s;
+}
+
+
+.line3{
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+   transition: all 0.8s;
+}
+
+
+.change .line1 {
+  transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+   transform: rotateZ(45deg) translate(-8px, -6px);
+}
+
+.mainMenu {
+  display: none;
+}
+.mainMenu li{
+  list-style: none;
+  margin: 25px;
+}
+
+.menu{
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+}
+
+
+
+#background{
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/6147398/pexels-photo-6147398.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")  fixed center;
+  background-size: cover;
+ 
+}
+.logo{
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  opacity: 20%;
+}
+.banner-format{
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+.banner-format h1{
+    margin-top: 3vw;
+    font-size: 10vw;
+}
+.banner-format h2{
+    margin-top: 1vw;
+    font-size: 6vw;
+
+}
+
+/* About Section */
+
+/*About and Degree & OTHER Layouts*/
+.about{
+ /* float: center; */
+ text-align: center;
+ padding: 20px;
+ color: #fff;
+ background-color: #916e6e;
+}
+
+.degrees{
+  /* float: center; */
+  /* wahala */
+  /* float: left; */
+  text-align: center;
+  padding: 20px;
+  color:#fff;
+  /* background-color: #BA777B;  */
+  background-color: #916e6e;
+  font-weight: normal;
+}
+.degrees ul {
+  list-style-type: none;
+}
+.degrees ul li p {
+  text-align: left
+}
+
+.degrees h1{
+  text-align: center;
+  font-size: 2vw;
+  /* margin-bottom: 0.5rem; */
+  /* font-size: 35px; */
+}
+.degrees h2{
+  text-align: left;
+  margin-bottom: 0.5rem;
+  margin: 1.2vw 0 0.8vw 0;
+  
+  /* font-size: 15px; */
+}
+
+footer {
+  background-color: #777;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Faculty and Staff */
+.container{
+  width: 45vw;
+  height: 52vw;
+  /* padding: 20px; */
+  background: rgba(179, 175, 175, 0.4);
+  text-align: center;
+  /* margin-top: 5%; */
+
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.images{
+  border-radius: 30%;
+}
+
+
+.Professors li{
+  list-style: none;
+}
+
+.facultyList li {
+  float: left;
+}
+.facultyList li div {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.profSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.ftitle{
+  margin: 10px;
+  text-align: center;
+}
+.ftitle h2{
+  font-size: 60px;
+}
+
+
+
+/* Table */
+
+table{
+  border-collapse: collapse; 
+  border: solid #383737;
+}
+
+thead th :nth-child(1){
+  width: 20%;
+}
+thead th :nth-child(2){
+  width: 15%;
+}
+thead th :nth-child(3){
+  width: 55%;
+}
+th, td{
+  padding: 10px;
+}
+
+/* tbody tr{
+  background: #916e6e;
+} */
+.ctitle h1{
+  text-align: center;
+  font-size: 35px;
+}
+
+th h2{
+  text-align: center;
+  background-color: #916e6e; 
+  border-color: #bf245d;
+}
+
+
+
+
+
+/* .facultyList {
+  display: inline-block;
+} */
+
+
+/* Contact */
+
+.contact-container {
+      width: 90%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.contact-button-link {
+  /* height: 50%;
+    width: 50%; */
+    align-self: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  /* height: 85vh; */
+  padding: 15px;
+}
+
+.form-container form {
+  align-self: center;
+  position: relative;
+  z-index: 1;
+}
+.form-container form label {
+  /* vertical-align: top; */
+  display: block;
+}
+.form-container form #email {
+  width: 96%;
+}
+.names-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+/* .names-grid-container div {
+  margin: 0.5rem;
+} */
+/* #email {
+  width: 93%;
+} */
+.address-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.streetGrid {
+  grid-column: 2 / 4;
+}
+/* .address-grid-container div {
+  margin: 0.5rem;
+} */
+
+form label,input,select {
+  margin: 0.5rem;
+}
+
+
+/* Button Edit */
+
+input[type="submit"]{
+  width: initial;
+  background-color:  #916e6e;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 10px;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover{
+  background-color:#fd57bf;
+}
+
+
+.interest h2{
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 96px;
+}
+
+.interest p{
+  font-size: 15px; 
+  text-align: center;
+}
+
+.interest h4{
+  font-size: 30px; 
+ text-align: center;
+ padding: 10px;
+}
+
+/* Contact Us */
+.sayHi {
+  bottom: 0px; 
+  background-color: #916e6e;
+  padding-top: 30px;
+}
+
+#contact-form{
+display: block;
+    text-align: center;
+
+   margin-top:50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-edit{
+  width: 40vw;
+  background:transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.form-edit::placeholder {
+color: #ffffff;
+}
+.form-edit-submit {
+  background-color: #916e6e;
+  color: #fff;
+  border: 0;
+  margin: 0.3rem 0 1rem 0;
+}
+
+input{
+  height:45px;
+}
+
+#message  h4 {
+  font-size: 3vw;
+}
+
+#message  h6 {
+  font-size: 2vw;
+}
+
+#message h4, h6 {
+  text-align: center;
+  color: #fff
+}
+
+.apply-form-edit {
+  /* width: 600px; */
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  #message center  h4 {
+  font-size: 6vw;
+}
+
+#message center  h6 {
+  font-size: 4vw;
+}
+  .banner-format h1{
+    margin-top: 3vw;
+    font-size: 18vw;
+}
+.banner-format h2{
+    margin-top: 1vw;
+    font-size: 12vw;
+
+}
+.about h1{
+  text-align: center;
+  font-size: 9vw;
+  margin-bottom: 0.5rem;
+  
+}
+.degrees h1{
+  text-align: center;
+  font-size: 9vw;
+  /* margin-bottom: 0.5rem; */
+  /* font-size: 35px; */
+}
+.degrees h2{
+  text-align: left;
+  margin-bottom: 0.5rem;
+  margin: 1.2vw 0 0.8vw 0;
+  
+  /* font-size: 15px; */
+}
+.degrees ul li p {
+  text-align: left;
+}
+
+.names-grid-container {
+  display: grid;
+  grid-template-columns: auto;
+
+}
+
+.address-grid-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+.streetGrid {
+  grid-column: 1;
+}
+.interest h2 {
+  font-size: 7vw;
+}
+.form-edit {
+  width: 70vw;
+}
+.container {
+  height: 172vw;
+}
+#message  h4 {
+  font-size: 11vw;
+}
+
+#message  h6 {
+  font-size: 5vw;
+}
+}
+
